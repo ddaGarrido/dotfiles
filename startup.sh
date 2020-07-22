@@ -8,6 +8,7 @@ if echo "$install_node" | grep -iq "^y" ;then
 	clear
 else
 	echo "Okay, no problem. :) Let's move on!"
+	echo " "
 fi
 
 echo "Install Git?(y/n)" 
