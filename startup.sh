@@ -7,8 +7,43 @@ if echo "$install_node" | grep -iq "^y" ;then
 	sudo apt install nodejs
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
-	echo " "
+	clear
+fi
+
+echo "Install Npm?(y/n)" 
+read install_node
+if echo "$install_node" | grep -iq "^y" ;then
+	sudo apt install npm
+	clear
+else
+fi
+
+echo "Install Yarn?(y/n)" 
+read install_node
+if echo "$install_node" | grep -iq "^y" ;then
+	npm install -g yarn
+	clear
+else
+	clear
+fi
+
+echo "Install Node Foreman?(y/n)" 
+read install_node
+if echo "$install_node" | grep -iq "^y" ;then
+	npm install -g foreman #node foreman
+	clear
+else
+	clear
+fi
+
+echo "Install Java?(y/n)" 
+read install_node
+if echo "$install_node" | grep -iq "^y" ;then
+	sudo apt-get install default-jre
+	sudo apt-get install default-jdk
+	clear
+else
+	clear
 fi
 
 echo "Install Git?(y/n)" 
@@ -17,7 +52,7 @@ if echo "$install_git" | grep -iq "^y" ;then
 	sudo apt install git -y
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 
@@ -28,7 +63,7 @@ if echo "$configure_git_user_name" | grep -iq "^y" ;then
 	git config --global user.name "$git_config_user_name"
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Configure Git user.email?(y/n)" 
@@ -38,7 +73,7 @@ if echo "$configure_git_user_email" | grep -iq "^y" ;then
 	git config --global user.email $git_config_user_email
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 
@@ -50,7 +85,7 @@ if echo "$configure_ssh_key" | grep -iq "^y" ;then
 	cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install Vim?(y/n)" 
@@ -59,7 +94,7 @@ if echo "$install_vim" | grep -iq "^y" ;then
 	sudo apt install vim -y
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Can I set VIM as your default GIT editor for you? (y/n)"
@@ -68,7 +103,7 @@ if echo "$git_core_editor_to_vim" | grep -iq "^y" ;then
 	git config --global core.editor vim
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install VsCode?(y/n)"
@@ -82,7 +117,7 @@ if echo "$ginstall_vs_code" | grep -iq "^y" ;then
 sudo apt-get install code -y # or code-insiders
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 
@@ -92,7 +127,7 @@ if echo "$install_postman" | grep -iq "^y" ;then
 	snap install postman
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install gitkraken?(y/n)" 
@@ -101,7 +136,7 @@ if echo "$install_gitkraken" | grep -iq "^y" ;then
 	sudo snap install gitkraken --classic
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install chrome?(y/n)" 
@@ -111,7 +146,7 @@ if echo "$install_chrome" | grep -iq "^y" ;then
 	sudo dpkg -i google-chrome-stable_current_amd64.deb
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install Intellij?(y/n)" 
@@ -120,7 +155,7 @@ if echo "$install_intellij" | grep -iq "^y" ;then
 	sudo snap install intellij-idea-ultimate --classic
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install Nvm?(y/n)" 
@@ -140,7 +175,7 @@ if echo "$install_nvm" | grep -iq "^y" ;then
 
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install docker?(y/n)" 
@@ -158,7 +193,7 @@ if echo "$install_docker" | grep -iq "^y" ;then
 
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install terminator?(y/n)" 
@@ -167,7 +202,7 @@ if echo "$install_terminator" | grep -iq "^y" ;then
 	sudo apt-get install terminator -y
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install aws-cli?(y/n)" 
@@ -180,7 +215,7 @@ if echo "$install_aws-cli" | grep -iq "^y" ;then
 	session-manager-plugin --version
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 echo "Install zsh?(y/n)" 
@@ -205,7 +240,7 @@ if echo "$install_zsh" | grep -iq "^y" ;then
 	source ~/.zshrc
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
 
 
@@ -222,5 +257,5 @@ if echo "$install_sublime" | grep -iq "^y" ;then
 	sudo apt-get install sublime-text
 	clear
 else
-	echo "Okay, no problem. :) Let's move on!"
+	clear
 fi
