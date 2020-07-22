@@ -2,24 +2,23 @@
 Dotfiles. Designed to be managed with GNU Stow
 
 ## Content
-*Java
-*Npm
-*Yarn
-*Node Foreman
-*NodeJs
-*Git
-*Vim
-*VsCode
-*Postman
-*chrome
-*gitkraken
-*Intellij
-*Nvm
-*docker
-*terminator
-*aws-cli
-*zsh
-*sublime text
+* Java  * Npm
+* Yarn
+* Node Foreman
+* NodeJs
+* Git
+* Vim
+* VsCode
+* Postman
+* chrome
+* gitkraken
+* Intellij
+* Nvm
+* docker
+* terminator
+* aws-cli
+* zsh
+* sublime text
 
 
 ## Usage Instructions
