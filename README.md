@@ -2,7 +2,8 @@
 Dotfiles. Designed to be managed with GNU Stow
 
 ## Content
-* Java  * Npm
+* Java
+* Npm
 * Yarn
 * Node Foreman
 * NodeJs
@@ -10,15 +11,15 @@ Dotfiles. Designed to be managed with GNU Stow
 * Vim
 * VsCode
 * Postman
-* chrome
-* gitkraken
+* Chrome
+* Git Kraken
 * Intellij
 * Nvm
-* docker
-* terminator
-* aws-cli
-* zsh
-* sublime text
+* Docker
+* Terminator
+* AWS-cli
+* Zsh
+* Sublime Text
 
 
 ## Usage Instructions
