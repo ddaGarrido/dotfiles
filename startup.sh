@@ -1,6 +1,15 @@
 sudo apt-get update
 clear
 
+echo "Install NodeJs?(y/n)" 
+read install_node
+if echo "$install_node" | grep -iq "^y" ;then
+	sudo apt install nodejs
+	clear
+else
+	echo "Okay, no problem. :) Let's move on!"
+fi
+
 echo "Install Git?(y/n)" 
 read install_git
 if echo "$install_git" | grep -iq "^y" ;then
