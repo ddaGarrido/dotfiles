@@ -13,8 +13,3 @@ cd $HOME/dotfiles
 3. How to execute the scripts?
 * Navigate to the folder $HOME/dotfiles and run `./startup.sh`
   * If there is a permission error, run `chmod +x startup.sh` or `/bin/sh startup.sh`
-4. Install what you want with gnu-stow, like
-```bash
-stow bash
-stow vim
-```
