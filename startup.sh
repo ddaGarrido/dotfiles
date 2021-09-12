@@ -16,6 +16,7 @@ if echo "$install_node" | grep -iq "^y" ;then
 	sudo apt install npm
 	clear
 else
+	clear
 fi
 
 echo "Install Yarn?(y/n)" 
